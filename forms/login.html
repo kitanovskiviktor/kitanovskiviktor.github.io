@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/zerox-footer-white.png">
+    <title>Login</title>
+</head>
+<body>
+    <canvas class="background"></canvas>
+    <section class="main">
+        <div class="form-section">
+            <div class="form-box form-left">
+                <a href="/index.html" class="link-btn"><-Home</a>
+                <div class="form-box-img">
+                    <img src="/images/zerox-navlogo.png" alt="">
+                </div>
+                
+                <h1 class="form-title">Log in</h1>
+                <div class="form-wrap">
+                    <form action="">
+                        <!-- <input type="text" id="name" placeholder="Full Name"> -->
+                        <input type="email" id="email" placeholder="E-Mail">
+                        <input type="password" id="password" placeholder="Password">
+                        <button type="submit" class="login-btn">Login</button>
+                    </form>
+                </div>
+            </div>
+            <div class="form-box form-right">
+                <div class="form-img">
+                    <img src="images/loginimage.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+      
+
+</body>
+ 
+<script src="/particles.js-master/dist/particles.min.js"></script>
+<script>
+  var particles = Particles.init({
+	selector: '.background',
+  color: ['#003366', '#404B69', '#DBEDF3'],
+  connectParticles: true
+});
+
+Particles.
+init
+({
+  
+// normal options
+  selector: 
+'.background'
+,
+  maxParticles: 
+200
+,
+  
+// options for breakpoints
+  responsive: [
+    {
+      breakpoint: 768,
+      options: {
+        maxParticles: 50,
+        color: '#003366',
+        connectParticles: true
+      }
+    }, 
+    {
+      breakpoint: 425,
+      options: {
+        maxParticles: 40,
+        connectParticles: true
+      }
+    }, 
+    {
+    breakpoint: 375,
+      options: {
+        maxParticles: 20,
+        connectParticles: true
+      }
+    }, 
+    {
+      breakpoint: 320,
+      options: {
+        maxParticles: 10
+ 
+// disables particles.js
+      }
+    }
+  ]
+});
+</script>
+</html>
